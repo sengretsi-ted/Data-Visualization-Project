@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+       nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: rgb(49, 38, 38);
+        }
+
+    .div {
+            font-weight: bolder;
+            font-size: 0.2in;
+            padding: 0.01mm;
+            background-color: rgb(201, 44, 44);
+
+        }
+        .container {
+    padding: 16px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    
+  }
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+
+  .registerbtn {
+
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity:1;
+  }
+
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Website</title>
+</head>
+<body>
+    <nav>
+
+        <div class="div">
+            <ul>
+                <a href="home.html">
+                    <li><i class="fa fa-dot-circle-o"></i>SpotCrime</li>
+                </a>
+                <a href="Visualisation.html">
+                    <li><i class="fa fa-bar-chart"></i>Visualization Charts</li>
+                </a>
+                <a href="team.html">
+                    <li><i class="fa fa-user"></i>Team</li>
+                </a>
+                <a href="review.html">
+                    <li><i class="fa fa-envelope"></i>Review</li>
+                </a>
+
+            </ul>
+        </div>
+
+        <u><h2 class="text-center text-black">Please fill the form so that our Review Team can get back to you!</h2></u>
+
+<form action="action_page.php">
+<div class="container">
+  <hr>
+  <label for="fname"><b>First Name</b></label>
+  <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
+
+  <label for="lname"><b>Last Name</b></label>
+  <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required>
+
+  <label for="region"><b>Region</b></label>
+  <p>
+    <label>Select region located in: </label>
+    <select id = "region">
+      <option value = "0">Enter region</option>
+      <option value = "1">Eastern</option>
+      <option value = "2">Western</option>
+      <option value = "3">Central</option>
+      <option value = "4">Northern</option>
+      <option value = "5">Southern</option>
+      <option value = "6">Northeast</option>
+      <option value = "7">Northwest</option>
+      <option value = "8">Southeast</option>
+      <option value = "9">Southwest</option>
+    </select>
+ </p>
+
+  <label for="email"><b>Email</b></label>
+  <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+  <label for="psw"><b>Password</b></label>
+  <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+  <label for="psw-repeat"><b>Repeat Password</b></label>
+   <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>    
+
+   <label for="enter-issue"><b>Enter Isssue:</b></label>
+   <b></b>
+   <textarea name="body" cols="150" row="450"> </textarea>
+
+  <hr>
+
+  <button type="submit" class="registerbtn">Send</button>
+</div>
+</form> 
+<footer style="text-align: center;">
+  &COPY; 2020, Crime Website
+</footer>
+</body>
+</html>
